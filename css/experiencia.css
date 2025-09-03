@@ -71,8 +71,9 @@
 .empresa-habilidades{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 32px;
     align-content: start;
+    font-weight: bold;
 }
 
 .empresa-habilidades li{
@@ -81,4 +82,31 @@
   border-radius: 4px;
   background: #ffff;
   padding: 5px 10px;
+}
+
+@media (max-width: 800px){
+  .experiencia{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .experiencia .subtitulo{
+    color: #141414;
+  }
+  .experiencia-texto{
+    font-size: 1.25rem;
+  }
+  .empresa-ano{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
+}
+@media (max-width: 500px){
+  .empresa{
+    grid-template-columns: 1fr;
+  }
 }
