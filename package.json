@@ -1,4 +1,10 @@
 {
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Meu portfólio pessoal",
+  "scripts": {
+    "minify:css": "cleancss -o ./dist/style.min.css ./src/style.css"
+  },
   "dependencies": {
     "clean-css-cli": "^5.6.3"
   }
