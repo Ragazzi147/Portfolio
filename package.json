@@ -6,6 +6,7 @@
     "minify:css": "cleancss -o ./dist/style.min.css ./src/style.css"
   },
   "dependencies": {
+    "balanced-match": "^3.0.1",
     "clean-css-cli": "^5.6.3"
   }
 }
