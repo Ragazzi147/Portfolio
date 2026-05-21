@@ -90,15 +90,52 @@
 
 .exp-role {
   font-size: 0.875rem;
-  color: var(--muted);
-  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.exp-context {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.85rem;
 }
 
 .exp-desc {
   font-size: 0.9rem;
   color: var(--muted);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   font-weight: 300;
+}
+
+.exp-group {
+  margin-bottom: 1.15rem;
+}
+
+.exp-group-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.exp-domains {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 300;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+.exp-domains strong {
+  color: var(--text);
+  font-weight: 500;
 }
 
 .exp-list {
