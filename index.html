@@ -1,173 +1,322 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="Lucas Ragazzi — Desenvolvedor Full Stack | FinTech · BaaS · Pix · Microfrontend">
+  <title>Lucas Ragazzi — Desenvolvedor Full Stack</title>
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon.svg">
-  <title>Lucas - Desenvolvedor FullStack</title>
-  <meta name="description" content="Desenvolvedor FullStack Lucas Ragazzi, localizado em São Paulo, Brasil">
-
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <h1>Lucas Ragazzi</h1>
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="introducao">
-    <img src="./img/perfil.jpg" alt="Desenvolvedor FullStack Lucas Ragazzi" width="400px" height="400px">
-    <div>
-      <h1>Desenvolvedor<br>FullStack</h1>
-      <p>Localizado em São Paulo, Brasil</p>
+
+  <nav>
+    <div class="nav-logo">lucas.ragazzi</div>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <p class="hero-tag">// Disponível para novas oportunidades</p>
+    <h1>Lucas<br><span>Ragazzi</span></h1>
+    <p class="hero-subtitle">
+      Desenvolvedor Full Stack especializado em <strong>FinTech</strong>, plataformas <strong>BaaS</strong> e módulo <strong>Pix</strong> — construindo sistemas financeiros escaláveis na AWS.
+    </p>
+    <div class="hero-badges">
+      <span class="badge accent">Pix</span>
+      <span class="badge accent">BaaS</span>
+      <span class="badge accent">Microfrontend</span>
+      <span class="badge">Node.js</span>
+      <span class="badge">React</span>
+      <span class="badge">TypeScript</span>
+      <span class="badge">AWS</span>
+      <span class="badge">PostgreSQL</span>
     </div>
-  </main>
+    <div class="hero-cta">
+      <a href="#contato" class="btn btn-primary">Entre em contato</a>
+      <a href="https://github.com/Ragazzi147" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/lucas-ragazzi-246520208" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn ↗</a>
+    </div>
+  </div>
 
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
-    <div>
-      <p class="experiencia-texto">Desenvolvedor Full Stack, utilizando tecnologias como <strong>Angular</strong> ,<strong>React</strong> , <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Typescript</strong> e <strong>.Net</strong>. Atuação em projetos com metodologias ágeis (Scrum/Kanban), entregando soluções eficientes e com foco na experiência do usuário.</p>
-
-      <div class="empresa">
-        <span class="empresa-ano">2022-2023</span>
-        <h3 class="empresa-titulo">Sequoia</h3>
-        <span class="empresa-titulo">Analista de Sistemas (Estagiário)</span>
-        <p class="experiencia-texto">Suporte, manutenção e desenvolvimento de sistemas internos utilizando Javascript, Typescript, Angular, .NET e SQL.
-          Automatização de processos e integração.
-          Análise de dados utilizando Tableau</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>.Net</li>
-          <li>Angular</li>
-          <li>React</li>
-        </ul>
+  <hr class="divider">
+\
+  <section id="sobre">
+    <div class="reveal">
+      <p class="section-label">01 / sobre</p>
+      <h2 class="section-title">Quem sou</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Sou desenvolvedor Full Stack com foco em <strong>sistemas financeiros de alta disponibilidade</strong>. Atuo na MB Labs desenvolvendo uma plataforma white label de banco digital para administradoras de imóveis e condomínios.</p>
+        <p>Atualmente lidero o desenvolvimento do <strong>módulo Pix</strong> — do backend ao frontend, como microfrontend independente — implementando todos os fluxos: transferências, chaves, QR Code, devolução e conciliação.</p>
+        <p>Uso <strong>LLMs intensivamente</strong> no ciclo de entrega para prototipação, refactoring assistido, code review e construção de agentes que automatizam tarefas repetitivas.</p>
       </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2023-2024</span>
-        <h3 class="empresa-titulo">Sottelli</h3>
-        <span class="empresa-titulo">Desenvolvedor Salesforce (Estagiário)</span>
-        <p class="experiencia-texto">Participei em implementação de pipelines de CI/CD e práticas de DevOps, sempre utilizando metodologias ágeis (Scrum e KANBAN) e Desenvolvimento em Apex e javascript e sistemas Salesforce.</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Apex</li>
-          <li>Salesforce</li>
-        </ul>
+      <div class="about-stats reveal">
+        <div class="stat-card">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Anos de experiência</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">BaaS</div>
+          <div class="stat-label">Foco em FinTech</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Pix</div>
+          <div class="stat-label">Módulo completo</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">AWS</div>
+          <div class="stat-label">Cloud native</div>
+        </div>
       </div>
+    </div>
   </section>
 
-  <section class="projeto" id="projetos" aria-label="Projetos">
-    <div class="projeto-container">
-      <h2 class="subtitulo">Projetos</h2>
+  <hr class="divider">
 
-      <div>
-        <ul class="projeto-lista">
-          <li>
-            <span class="projeto-titulo">Dogs</span>
-            <img src="./img/dogs.png" alt="Site Dogs">
-            <span class="projeto-descricao">Rede social para pets (<strong>React</strong>)</span>
-            <a href="https://dogs-one-xi.vercel.app/">Acessar o site</a>
-            <a href="https://github.com/Ragazzi147/Dogs">Acessar o Repositório</a>
-          </li>
-          <li>
-            <span class="projeto-titulo">DSmeta</span>
-            <img src="./img/dsmeta.png" alt="">
-            <span class="projeto-descricao">Lista de vendas (<strong>React e Java</strong>)</span>
-            <a href="https://lista-de-vendas-ragazzi.netlify.app/">Acessar o site</a>
-            <a href="https://github.com/Ragazzi147/dsmeta">Acessar o Repositório</a>
-          </li>
-          <li>
-            <span class="projeto-titulo">Help-Desk</span>
-            <img src="./img/help-desk.png" alt="">
-            <span class="projeto-descricao">Sistema de chamados (<strong>em produção</strong>)</span>
+  <section id="experiencia">
+    <div class="reveal">
+      <p class="section-label">02 / experiência</p>
+      <h2 class="section-title">Onde trabalhei</h2>
+    </div>
+    <div class="timeline">
 
-            <a href="https://github.com/Ragazzi147/Help-desk">Acessar o Repositório</a>
-          </li>
-
-          <li>
-            <span class="projeto-titulo">bikcraft</span>
-            <img src="./img/bikcraft.png" alt="">
-            <span class="projeto-descricao">Bicicletaría (<strong>em produção</strong>)</span>
-            <a href="https://bikcraft-lilac.vercel.app/">Acessar o site</a>
-            <a href="https://github.com/Ragazzi147/bikcraft">Acessar o Repositório</a>
-          </li>
-          <li>
-            <span class="projeto-titulo">Painel de Cadastro</span>
-            <img src="./img/painel-cadastro.png" alt="">
-            <span class="projeto-descricao">Painel de cadastro de produtos (<strong>Angular</strong>)</span>
-            <a href="https://painel-de-cadastro.netlify.app/">Acessar o site</a>
-            <a href="https://github.com/Ragazzi147/Painel-de-Cadastro">Acessar o Repositório</a>
-          </li>
-      </div>
-  </section>
-
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao-container">
-      <h2 class="subtitulo">Formação</h2>
-
-      <div>
-        <p class="formacao-texto">
-          Minha mais recente experiência acadêmica foi o <strong>Tecnólogo</strong> que fiz de <strong>Análise e Desenvolvimento de Sistemas</strong>. Além disso me mantenho sempre atualizado com cursos intesivos online.
-        </p>
-
-        <ul class="faculdade-lista">
-          <li class="faculdade">
-            <span class="faculdade-tipo">Tecnólogo</span>
-            <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
-            <span class="faculdade-instituicao">Unimetrocamp Wyden</span>
-          </li>
-          <div class="formacao-extra">
-            <div class="cursos">
-              <h3>Cursos intesivos</h3>
-              <ul>
-                <li>Análista de Sistemas (Preparatório) <span>300h</span></li>
-                <li>Front End <span>96h</span></li>
-              </ul>
-            </div>
-            <div class="idiomas">
-              <h3>Idiomas</h3>
-              <ul>
-                <li>Português <span>/ Fluente</span></li>
-                <li>Inglês <span>/ Avançado</span></li>
-              </ul>
-            </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024 — atual</div>
+        <div class="timeline-dot active"></div>
+        <div class="timeline-content featured">
+          <div class="exp-header">
+            <span class="exp-company">MB Labs</span>
+            <span class="exp-tag">atual</span>
           </div>
+          <div class="exp-role">Desenvolvedor Full Stack — FinTech / BaaS</div>
+          <p class="exp-desc">Desenvolvimento e evolução de plataforma white label de banco digital (BaaS) para administradoras de imóveis e condomínios, com arquitetura cloud-native na AWS.</p>
+          <ul class="exp-list">
+            <li><strong>Módulo Pix:</strong> desenvolvimento completo (backend + microfrontend) — transferências, chaves, QR Code estático/dinâmico, devolução e conciliação</li>
+            <li><strong>APIs REST</strong> em Node.js + TypeScript para contas digitais, TED, P2P, CNAB 240/400 e boletos</li>
+            <li>Integrações críticas com operadoras de cartão, adquirentes e Banking APIs</li>
+            <li>PostgreSQL (RDS) + TypeORM com transações ACID e otimização de queries financeiras</li>
+            <li>Deploy e operação em <strong>AWS</strong> (ECS, S3, CodeBuild, CloudWatch) com foco em SLAs e observabilidade</li>
+            <li>Code reviews com foco em segurança (OWASP), Clean Architecture e SOLID</li>
+            <li>Uso intensivo de <strong>LLMs</strong> para prototipação, refactoring e agentes de automação</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Microfrontend</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">TypeORM</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Pix</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">CNAB</span>
+            <span class="tech-tag">SonarQube</span>
+          </div>
+        </div>
       </div>
-    </div>
 
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2023 — 2024</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <span class="exp-company">Sottelli</span>
+          </div>
+          <div class="exp-role">Desenvolvedor Salesforce (Estagiário)</div>
+          <ul class="exp-list">
+            <li>Desenvolvimento em Apex e JavaScript em sistemas Salesforce</li>
+            <li>Implementação de pipelines CI/CD e práticas DevOps</li>
+            <li>Metodologias ágeis (Scrum e Kanban)</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tech-tag">Salesforce</span>
+            <span class="tech-tag">Apex</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2022 — 2023</div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="exp-header">
+            <span class="exp-company">Sequoia</span>
+          </div>
+          <div class="exp-role">Analista de Sistemas (Estagiário)</div>
+          <ul class="exp-list">
+            <li>Suporte, manutenção e desenvolvimento de sistemas internos</li>
+            <li>Automatização de processos e integração de sistemas</li>
+            <li>Análise de dados com Tableau</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">.NET</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Tableau</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">
-        Estou disponivel no momento. Entre em contato comigo e marcamos uma conversa
-      </p>
-      <ul class="footer-contato">
-        <li><a href="tel:+5519994675000">+55 (19) 994675000</a></li>
-        <li><a href="mailto:lucasax147@gmail.com">lucasax147@gmail.com</a></li>
-        <li><a href="https://github.com/Ragazzi147">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/lucas-ragazzi-246520208">LinkedIn</a></li>
-      </ul>
-      <p class="footer-copy">Lucas Ragazzi. Alguns direitos reservados.</p>
-    </div>
+  <hr class="divider">
 
+  <section id="skills">
+    <div class="reveal">
+      <p class="section-label">03 / stack</p>
+      <h2 class="section-title">Tecnologias</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Backend</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-dot hot"></div>Node.js</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>TypeScript</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>REST APIs</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>JWT / Auth</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>CNAB 240/400</div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Frontend</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-dot hot"></div>React</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>Microfrontend</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>TypeScript</div>
+          <div class="skill-item"><div class="skill-dot"></div>Angular</div>
+          <div class="skill-item"><div class="skill-dot"></div>Design System</div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Banco de Dados</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-dot hot"></div>PostgreSQL</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>TypeORM</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>Transações ACID</div>
+          <div class="skill-item"><div class="skill-dot"></div>SQL</div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">Cloud & DevOps</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-dot hot"></div>AWS (ECS, S3)</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>CloudWatch</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>CodeBuild</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>CI/CD</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>SonarQube</div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">FinTech / Domínio</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-dot hot"></div>Pix (BACEN)</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>BaaS</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>Banking APIs</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>Cards Processing</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>CNAB / Boletos</div>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">AI & Produtividade</div>
+        <div class="skill-items">
+          <div class="skill-item"><div class="skill-dot hot"></div>LLMs (Claude, GPT)</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>AI-Augmented Dev</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>Agentes de automação</div>
+          <div class="skill-item"><div class="skill-dot hot"></div>Prompt Engineering</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="projetos">
+    <div class="reveal">
+      <p class="section-label">04 / projetos</p>
+      <h2 class="section-title">Projetos públicos</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <img class="project-thumb" src="./img/dogs.png" alt="Preview do projeto Dogs" width="400" height="225" loading="lazy">
+        <div class="project-name">Dogs</div>
+        <div class="project-desc">Rede social para pets com autenticação, upload de fotos e feed dinâmico. Construído com React + hooks personalizados.</div>
+        <div class="project-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">REST API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://dogs-one-xi.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver site ↗</a>
+          <a href="https://github.com/Ragazzi147/Dogs" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img class="project-thumb" src="./img/dsmeta.png" alt="Preview do projeto DSmeta" width="400" height="225" loading="lazy">
+        <div class="project-name">DSmeta</div>
+        <div class="project-desc">Dashboard de lista de vendas com filtros por data e notificações via SMS. Stack fullstack com React no frontend e Java no backend.</div>
+        <div class="project-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Spring</span>
+        </div>
+        <div class="project-links">
+          <a href="https://lista-de-vendas-ragazzi.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver site ↗</a>
+          <a href="https://github.com/Ragazzi147/dsmeta" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img class="project-thumb" src="./img/bikcraft.png" alt="Preview do projeto Bikcraft" width="400" height="225" loading="lazy">
+        <div class="project-name">Bikcraft</div>
+        <div class="project-desc">Site institucional de bicicletaria customizada. Layout responsivo com HTML semântico, CSS modular e JavaScript para interações.</div>
+        <div class="project-tags">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://bikcraft-lilac.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">Ver site ↗</a>
+          <a href="https://github.com/Ragazzi147/bikcraft" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="contato">
+    <div class="contact-box reveal">
+      <h2 class="contact-title">Vamos conversar?</h2>
+      <p class="contact-sub">Disponível para oportunidades em FinTech, BaaS e produtos financeiros digitais.</p>
+      <div class="contact-links">
+        <a href="mailto:lucasax147@gmail.com" class="btn btn-primary">lucasax147@gmail.com</a>
+        <a href="https://www.linkedin.com/in/lucas-ragazzi-246520208" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn ↗</a>
+        <a href="https://github.com/Ragazzi147" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub ↗</a>
+        <a href="https://wa.me/5519994675000" target="_blank" rel="noopener noreferrer" class="btn btn-outline">WhatsApp ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Lucas Ragazzi · Campinas, SP · Desenvolvido com HTML, CSS e JS puro</p>
   </footer>
+
+  <script src="./js/reveal.js"></script>
 </body>
 
 </html>

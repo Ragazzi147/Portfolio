@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  section {
+    padding: 4rem 1.25rem;
+  }
+
+  .hero {
+    padding: 5rem 1.25rem 3rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-date {
+    text-align: left;
+  }
+
+  .timeline-dot,
+  .timeline-item::after {
+    display: none;
+  }
+
+  .contact-box {
+    padding: 2rem 1.25rem;
+  }
+}

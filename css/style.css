@@ -1,8 +1,10 @@
 @import './global.css';
 @import './header.css';
 @import './introducao.css';
+@import './sobre.css';
 @import './experiencia.css';
+@import './skills.css';
 @import './projetos.css';
-@import './formacao.css';
+@import './contato.css';
 @import './footer.css';
-
+@import './responsive.css';
