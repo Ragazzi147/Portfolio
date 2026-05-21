@@ -1,21 +1,56 @@
-# Portfólio Pessoal
+# Portfólio — Lucas Ragazzi
 
-Este é o meu portfólio pessoal, um projeto desenvolvido para apresentar minhas habilidades, experiência profissional e os principais projetos que realizei.
+Portfólio pessoal em **React**, **TypeScript** e **Vite**, com conteúdo estruturado em dados tipados e deploy estático no GitHub Pages.
 
-## Sobre o Projeto
+## Stack
 
-O portfólio foi construído com uma base sólida em **HTML e CSS** para garantir uma estrutura semântica e um design responsivo. Ele serve como uma vitrine para minha trajetória como **Desenvolvedor Full Stack**, detalhando minha experiência em empresas e meu conhecimento em diversas tecnologias.
+- React 19 + TypeScript
+- Vite 6
+- CSS modular (mesmo design da versão anterior)
 
-Estou trabalhando na próxima versão do portfólio, que será transformada em um aplicativo **React** para incluir funcionalidades mais dinâmicas, como filtros de projetos.
+## Funcionalidades
 
-## Tecnologias Utilizadas
+- Seções: hero, sobre, experiência, skills, projetos e contato
+- Filtro de projetos por tag (React, Java, HTML, etc.)
+- Animações de entrada com `IntersectionObserver`
+- Deploy automático via GitHub Actions
 
-- **HTML5:** Estrutura e semântica do conteúdo.
-- **CSS3:** Estilização e design responsivo.
-- **JavaScript:** Interatividade básica e otimizações.
+## Desenvolvimento local
 
-## Projetos em Destaque
+```bash
+npm install
+npm run dev
+```
 
-- **Dogs:** Uma rede social para pets desenvolvida com **React**.
-- **DSmeta:** Um painel de vendas construído com **React** e **Java**.
-- **Help-desk:** Um sistema de chamados com **Angular** e **.NET**.
+Abre em [http://localhost:5173/Portfolio/](http://localhost:5173/Portfolio/) (o `base` do Vite aponta para `/Portfolio/`).
+
+## Build e preview
+
+```bash
+npm run build
+npm run preview
+```
+
+## Deploy
+
+O workflow em `.github/workflows/jekyll-gh-pages.yml` instala dependências, roda `npm run build` e publica a pasta `dist` no GitHub Pages.
+
+Site: [https://ragazzi147.github.io/Portfolio/](https://ragazzi147.github.io/Portfolio/)
+
+## Estrutura
+
+```
+src/
+  components/   # UI por seção
+  data/         # experiência, projetos, skills, links
+  styles/       # CSS do portfólio
+public/
+  img/          # thumbnails dos projetos
+  favicons/
+```
+
+## Projetos em destaque
+
+- **Dogs** — React + REST API
+- **DSmeta** — React + Java/Spring
+- **Bikcraft** — HTML, CSS e JavaScript
